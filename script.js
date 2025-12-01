@@ -9,7 +9,7 @@ input2 = Number(input2);
 if(isNaN(input1) == false && isNaN(input2) == false && flag == false){
 	alert(`The sum of ${input1} and ${input2} is ${Number(input1) + Number(input2)}.`);
 }
-else{     
+else{      
 	alert(`Invalid input. Please enter a valid number.`)
 }
 
