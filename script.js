@@ -1,16 +1,14 @@
- let input1 = prompt("Enter the first number:");
- let input2 = prompt("Enter the second number:"); 
-let flag = false;
-if(input1 == "" || input2 == ""){ 
-	flag=true;
-}
-input1 = Number(input1);
-input2 = Number(input2);
-if(isNaN(input1) == false && isNaN(input2) == false && flag == false){
-	alert(`The sum of ${input1} and ${input2} is ${Number(input1) + Number(input2)}.`);
-}
-else{      
-	alert(`Invalid input. Please enter a valid number.`)
-}
+const num1 = prompt("First number:");
+const num2 = prompt("Second number:");
 
-// Write your code here and print the output using alert function
+// Convert to number
+const a = Number(num1);
+const b = Number(num2);
+
+// Validate inputs
+if (num1 === "" || num2 === "" || isNaN(a) || isNaN(b)) {
+    alert("Invalid input. Please enter a valid number.");
+} else {
+    const sum = a + b;
+    alert(`The sum of ${a} and ${b} is ${sum}.`);
+}
